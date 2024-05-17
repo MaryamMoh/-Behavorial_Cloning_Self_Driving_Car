@@ -5,30 +5,30 @@
 The goal of this project is to develop a self-driving car model using behavioral cloning. The model learns to drive in a simulator by imitating human driving behavior captured in training data. This approach involves collecting driving data, training a deep neural network to predict steering angles from camera images, and then using this network to drive the car autonomously in the simulator.
 Dataset Collection
 
-    The training data consists of images captured from the car's cameras and corresponding steering angles.
-    Data is collected by manually driving the car in the simulator and recording the camera images and steering angles.
+The training data consists of images captured from the car's cameras and corresponding steering angles.
+Data is collected by manually driving the car in the simulator and recording the camera images and steering angles.
 
 ## Data Preprocessing
 
-    Images are preprocessed to remove unnecessary parts (e.g., the hood of the car, areas past the horizon) and resized to reduce training time.
-    Data augmentation techniques are applied to increase the diversity of the training data and improve the model's generalization.
+Images are preprocessed to remove unnecessary parts (e.g., the hood of the car, areas past the horizon) and resized to reduce training time.
+Data augmentation techniques are applied to increase the diversity of the training data and improve the model's generalization.
 
 ## Model Architecture
 
-    The model architecture consists of convolutional and max-pooling layers followed by fully connected layers.
-    Activation functions such as PReLU are used to introduce non-linearity, and batch normalization is applied to speed up training and improve convergence.
-    Dropout layers are used for regularization to prevent overfitting.
+The model architecture consists of convolutional and max-pooling layers followed by fully connected layers.
+Activation functions such as PReLU are used to introduce non-linearity, and batch normalization is applied to speed up training and improve convergence.
+Dropout layers are used for regularization to prevent overfitting.
 
 ## Training Process
 
-    The model is trained using the Adam optimizer and mean squared error loss function.
-    Training is performed over multiple epochs, with the model learning to predict steering angles from the camera images.
-    The model's performance is evaluated on a separate validation dataset to ensure that it generalizes well to unseen data.
+The model is trained using the Adam optimizer and mean squared error loss function.
+Training is performed over multiple epochs, with the model learning to predict steering angles from the camera images.
+The model's performance is evaluated on a separate validation dataset to ensure that it generalizes well to unseen data.
 
 ## Results
 
-    The trained model is capable of driving the car autonomously in the simulator, following the road and making appropriate steering adjustments based on the input images.
-    The model's performance is evaluated based on its ability to stay on the road and respond to various driving conditions (e.g., curves, obstacles).
+The trained model is capable of driving the car autonomously in the simulator, following the road and making appropriate steering adjustments based on the input images.
+The model's performance is evaluated based on its ability to stay on the road and respond to various driving conditions (e.g., curves, obstacles).
 
 ## Conclusion
 
@@ -76,24 +76,6 @@ Behavioral cloning is a promising approach for developing self-driving car model
 
     Use the Generate Driving Log button in Training Mode and/or Deployment Mode to log data like Vehicle Position, Throttle Command, Brake Command, Steering Command, and Vehicle Speed within Unity Editor.
 
-### Citation
-
-If you use this simulator for your research, please cite the following paper:
-
-
-@article{RBCAV-2021,
-author = {Samak, Tanmay Vilas and Samak, Chinmay Vilas and Kandhasamy, Sivanathan},
-title = {Robust Behavioral Cloning for Autonomous Vehicles Using End-to-End Imitation Learning},
-journal = {SAE International Journal of Connected and Automated Vehicles},
-volume = {4},
-number = {3},
-pages = {279-295},
-month = {aug},
-year = {2021},
-doi = {10.4271/12-04-03-0023},
-url = {https://doi.org/10.4271/12-04-03-0023},
-issn = {2574-0741}
-}
 
 ### Acknowledgement
 
